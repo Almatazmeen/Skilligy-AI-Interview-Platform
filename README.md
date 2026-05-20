@@ -2,7 +2,7 @@
 
 Skilligy is an AI-powered interview practice platform that simulates real interview experiences using text, voice, and video interaction modes.
 
-The platform evaluates candidate responses using Natural Language Processing, Speech Intelligence, and Computer Vision techniques to provide structured feedback, scoring, and improvement suggestions.
+The platform evaluates candidate responses using Natural Language Processing, Speech Intelligence, and Computer Vision techniques to generate structured feedback, performance scores, and improvement suggestions.
 
 ---
 
@@ -42,27 +42,66 @@ The platform evaluates candidate responses using Natural Language Processing, Sp
 
 ## System Architecture
 
-User → Frontend → FastAPI Backend → AI Processing → Scoring → Feedback Generation
+User → Frontend Interface → FastAPI Backend → AI Processing Modules → Score Calculation → AI Feedback Generation → Results Dashboard
 
 ---
 
-## Current Modules
+## Project Modules
 
-- Resume Analysis Module
-- Interview Question Generation
-- Text Interview Mode
-- Voice Interview Mode
-- Video Interview Mode
+### Resume Analysis Module
+- Extracts text from uploaded resumes
+- Analyzes skills and resume quality
+- Generates AI-based improvement suggestions
+
+### Interview Question Generation
+- Generates role-specific interview questions
+- Supports HR and Technical interview rounds
+
+### Text Interview Mode
+- Evaluates answer relevance, clarity, and structure
+- Generates strengths and improvement suggestions
+
+### Voice Interview Mode
+- Converts speech to text using Whisper
+- Performs speech intelligence analysis
+- Calculates fluency and confidence scores
+
+### Video Interview Mode
+- Performs transcript evaluation
+- Uses MediaPipe FaceMesh and OpenCV for behavioral analysis
+- Measures eye contact, face visibility, and engagement
+
+---
+
+## Screenshots
+
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Resume Analysis
+![Resume Analysis](screenshots/resume-analysis.png)
+
+### Text Interview Mode
+![Text Mode](screenshots/text-mode.png)
+
+### Voice Interview Mode
+![Voice Mode](screenshots/voice-mode.png)
+
+### Video Interview Mode
+![Video Mode](screenshots/video-mode.png)
+
+### Feedback Dashboard
+![Dashboard](screenshots/feedback-dashboard.png)
 
 ---
 
 ## Future Improvements
 
-- Better role-specific question generation
-- Advanced interview analytics dashboard
-- User authentication system
-- Performance history tracking
-- Deployment optimization
+- Improved role-specific question generation
+- Advanced analytics dashboard
+- User authentication and profile management
+- Interview history tracking
+- Cloud deployment optimization
 
 ---
 
