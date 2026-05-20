@@ -1,0 +1,14 @@
+{
+  "software engineer_technical": [
+    "What are the main differences between a for loop and a while loop in programming, and when would you use each?",
+    "Can you explain how memory allocation works in a stack-based language like C or C++?",
+    "How do you implement a simple bubble sort algorithm, and what is its time complexity?",
+    "What is the difference between object-oriented programming (OOP) and functional programming (FP), and can you give an example of each?",
+    "Can you write a simple function in your preferred programming language to calculate the area of a rectangle given its length and width?",
+    "What are some common pitfalls when using arrays in programming, and how can you avoid them?",
+    "Can you explain the concept of a linked list and how it differs from an array, and write a simple implementation of a singly linked list in code?",
+    "How do you handle null pointer exceptions in your code, and can you give an example of how to do it in a real-world scenario?",
+    "Can you write a recursive function to calculate the factorial of a given number, and explain the base case and recursive case in your implementation?",
+    "What is the difference between a shallow copy and a deep copy in programming, and can you give an example of when to use each?"
+  ]
+}
