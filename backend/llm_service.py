@@ -142,10 +142,12 @@ Return ONLY a numbered list.
     key = f"{role.lower()}_{round_type.lower()}"
 
     previous = history.get(key, [])
-
     def normalize(text):
-        return text.lower().replace("?", "").replace(".", "").strip()
-
+        text = text.lower()
+        text = re.sub(r"[^a-z0-9 ]", "", text)   # remove punctuation
+        text = re.sub(r"\s+", " ", text)         # remove extra spaces
+        return text.strip()
+    
     normalized_previous = [normalize(p) for p in previous]
 
     unique_questions = []
@@ -154,7 +156,8 @@ Return ONLY a numbered list.
         nq = normalize(q)
         duplicate = False
         for prev in normalized_previous:
-            if nq in prev or prev in nq:
+            overlap = len(set(nq.split()) & set(prev.split()))
+            if overlap >= 5:   # if many words overlap → same question
                 duplicate = True
                 break
 
@@ -190,6 +193,7 @@ Evaluate fairly based on:
 - Relevance to the question
 - Clarity
 - Realism of the example
+
 
 Scoring:
 0–3 = off topic
